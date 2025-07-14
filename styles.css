@@ -25,7 +25,7 @@ p {
 
 }
 
-/*  Navegació simple*/
+/*  Navegación simple*/
 
 header {
     background-color: #0f0f0f;
@@ -77,13 +77,218 @@ main {
     margin: 0 auto;
 }
 
-#inicio h2{
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #ff6b35;
-}
 
 #inicio p {
     font-size: 1.3rem;
     color: #cccccc;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    margin-bottom: 60px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-content h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.highlight {
+    color: #ff6b35;
+}
+
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary{
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    color: white;
+}
+.btn-primary:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover{
+    background: white;
+    color: #1a1a1a;
+}
+
+.hero-visual{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image-placeholder {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(247, 147, 30, 0.1));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 107, 53, 0.3);
+
+}
+
+.overwatch-logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overwatch-logo img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.how-it-works {
+    background: #23272f;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.how-it-works h2 {
+    color: #ff6b35;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 280px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.step:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+.step-number {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.step h3{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.step p {
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+.features {
+    background: #181c22;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.features h2{
+    color: #ff6b35;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-card {
+    background: #23272f;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 260px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 12);
+    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+}
+
+.feature-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(255,107,53,0.15);
+}
+
+.feature-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.feature-card h3 { 
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+.feature-card p {
+    color: #cccccc;
+    font-size: 1rem;
 }
